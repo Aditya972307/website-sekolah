@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.ico" type="image/png">
+    <title>Jurusan</title>
+</head>
+<style>  
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding: 16px 32px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffd700; 
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.jurusan-section {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+}
+
+.container-jurusan {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.container-jurusan h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.grid-jurusan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.jurusan-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  max-width: 200px;
+  flex: 1 1 280px;
+  transition: transform 0.2s;
+}
+
+.jurusan-card:hover {
+  transform: translateY(-5px);
+}
+
+.jurusan-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.jurusan-card h3 {
+  color: #b40000;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.jurusan-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .grid-jurusan {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-left h4, .footer-right h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 8px;
+}
+
+.footer-right ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+</style>
+<header>
+    <header class="main-header">
+        <div><img src="img/logo.ico" alt="" height="51px" width="51px"></div>
+  <nav class="nav-menu">
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil Sekolah</a>
+    <a href="jurusan.html">Jurusan</a>
+    <a href="kontak.html">Kontak</a>
+  </header>
+  </nav>
+</header>
+<body>
+      <section class="jurusan-section">
+    <div class="container-jurusan">
+      <h2>Kompetensi Keahlian di SMK Negeri 6 Malang</h2>
+      <div class="grid-jurusan">
+        
+        <div class="jurusan-card">
+          <img src="img/rpl.png" alt="Rekayasa Perangkat Lunak">
+          <h3>Rekayasa Perangkat Lunak (RPL)</h3>
+          <p>Jurusan yang mempelajari pengembangan aplikasi dan perangkat lunak modern.</p>
+        </div>
+
+        <div class="jurusan-card">
+          <img src="img/tkj.png" alt="Teknik Komputer dan Jaringan">
+          <h3>Teknik Komputer dan Jaringan (TKJ)</h3>
+          <p>Jurusan yang fokus pada jaringan komputer, perangkat keras, dan sistem jaringan.</p>
+        </div>
+
+        <div class="jurusan-card">
+          <img src="img/sija.png" alt="Sistem Informasi Jaringan Dan Aplikasi">
+          <h3>Sistem Informasi Jaringan Dan Aplikasi (SIJA)</h3>
+          <p>Jurusan yang mempelajari sebuah jaringan, komponen hardware maupun software dan Pembuatan aplikasi.</p>
+        </div>
+
+        <div class="jurusan-card">
+          <img src="img/titl.png" alt="Teknik Instalasi Tenaga Listrik">
+          <h3>Teknik Instalasi Tenaga Listrik (TITL)</h3>
+          <p>JurusaN yang mempelajari tentang sistem instalasi listrik, baik untuk perumahan, industri, maupun gedung bertingkat.</p>
+        </div>
+
+        <div class="jurusan-card">
+          <img src="img/tpm.png" alt="Teknik Permesinan">
+          <h3>Teknik Permesinan (TPM)</h3>
+          <p>Jurusan yang mempelajari proses permesinan logam, seperti bubut, frais, gerinda, serta pengoperasian mesin CNC.</p>
+        </div>
+
+        <div class="jurusan-card">
+          <img src="img/tkro.png" alt="Teknik Kendaraan Ringan Otomotif">
+          <h3>Teknik Kendaraan Ringan Otomotif (TKRO)</h3>
+          <p>Jurusan yang mempelajari tentang perawatan, perbaikan, dan pengecekan sistem kendaraan bermotor roda empat.</p>
+        </div>
+
+        <div class="jurusan-card">
+          <img src="img/oto.png" alt="Teknik Ototronik">
+          <h3>Teknik Ototronik (OTO)</h3>
+          <p>Jurusan yang mempelajari segala hal tentang kendaraan bermotor, baik roda dua maupun roda empat.</p>
+        </div>
+
+        <div class="jurusan-card">
+          <img src="img/tab.png" alt="Teknik Alat Berat">
+          <h3>Teknik Alat Berat (TAB)</h3>
+          <p>Jurusan yang mempelajari perawatan, perbaikan, pengoperasian, dan sistem kerja dari berbagai jenis alat berat.</p>
+        </div>
+
+        <div class="jurusan-card">
+          <img src="img/kjij.png" alt="Konstruksi Jalan, Irigasi dan Jembatan">
+          <h3>Konstruksi Jalan, Irigasi dan Jembatan (KJIJ)</h3>
+          <p>Jurusan yang mempelajari teknik perencanaan, pelaksanaan, dan pengawasan pembangunan struktur jembatan, saluran irigasi, drainase, dan konstruksi sipil lainnya.</p>
+        </div>
+
+        <div class="jurusan-card">
+          <img src="img/dpib.png" alt="Desain Pemodelan dan Informasi Bangunan">
+          <h3>Desain Pemodelan dan Informasi Bangunan (DPIB)</h3>
+          <p>Jurusan yang mempelajari proses perencanaan bangunan, termasuk menggambar teknik secara manual maupun menggunakan software desain arsitektur</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h4>SMK Negeri 6 Malang</h4>
+      <p>Jl. Ki Ageng Gribig No.28, Madyopuro, Kec. Kedungkandang, Kota Malang, Jawa Timur</p>
+      <br>
+      <p>Email: smkn6malang@email.sch.id</p>
+    </div>
+    <div class="footer-right">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil Sekolah</a></li>
+        <li><a href="jurusan.html">Jurusan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 SMK Negeri 6 Malang. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

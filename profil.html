@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.ico" type="image/png">
+    <title>Profil Sekolah</title>
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding: 16px 32px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffd700; 
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.profil-sekolah {
+  padding: 60px 20px;
+}
+
+.container-profil {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container-profil h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.konten-profil {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.konten-profil img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.teks-profil {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-left h4, .footer-right h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 8px;
+}
+
+.footer-right ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+</style>
+<header>
+    <header class="main-header">
+        <div><img src="img/logo.ico" alt="" height="51px" width="51px"></div>
+  <nav class="nav-menu">
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil Sekolah</a>
+    <a href="jurusan.html">Jurusan</a>
+    <a href="kontak.html">Kontak</a>
+  </header>
+  </nav>
+</header>
+<body>
+    <section class="profil-sekolah">
+    <div class="container-profil">
+      <h2>Profil SMK Negeri 6 Malang</h2>
+      <div class="konten-profil">
+        <img src="img/p.jpg" alt="Gedung SMKN 6 Malang">
+        <div class="teks-profil">
+          <p>SMK Negeri 6 Malang adalah sekolah menengah kejuruan yang berdiri sejak tahun 1980. Terletak di pusat Kota Malang, sekolah ini memiliki berbagai jurusan unggulan seperti Rekayasa Perangkat Lunak,Sistem Informasi Jaringan Dan Aplikasi, dan Teknik Komputer Jaringan.</p>
+          <p>Dengan dukungan tenaga pengajar profesional dan fasilitas lengkap, SMKN 6 Malang berkomitmen mencetak lulusan yang siap kerja, kreatif, dan berakhlak mulia. Sekolah ini juga aktif menjalin kerja sama dengan dunia usaha dan industri sebagai bagian dari program pembelajaran berbasis industri.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h4>SMK Negeri 6 Malang</h4>
+      <p>Jl. Ki Ageng Gribig No.28, Madyopuro, Kec. Kedungkandang, Kota Malang, Jawa Timur</p>
+      <br>
+      <p>Email: smkn6malang@email.sch.id</p>
+    </div>
+    <div class="footer-right">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil Sekolah</a></li>
+        <li><a href="jurusan.html">Jurusan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 SMK Negeri 6 Malang. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

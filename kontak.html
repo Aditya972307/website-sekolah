@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.ico" type="image/png">
+    <title>Kontak</title>
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding: 16px 32px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffd700; 
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.kontak-sekolah {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.kontainer-kontak {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.kontainer-kontak h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.kontak-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 250px;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info-box h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.kontak-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form-kontak {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-kontak h3 {
+  margin-bottom: 15px;
+}
+
+.form-kontak input,
+.form-kontak textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-kontak button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form-kontak button:hover {
+  background: #0056b3;
+}
+
+.footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-left h4, .footer-right h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 8px;
+}
+
+.footer-right ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+</style>
+<header>
+    <header class="main-header">
+        <div><img src="img/logo.ico" alt="" height="51px" width="51px"></div>
+  <nav class="nav-menu">
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil Sekolah</a>
+    <a href="jurusan.html">Jurusan</a>
+    <a href="kontak.html">Kontak</a>
+  </header>
+  </nav>
+</header>
+<body>
+    <section class="kontak-sekolah">
+    <div class="kontainer-kontak">
+      <h2>Hubungi Kami</h2>
+
+      <div class="kontak-info">
+        <div class="info-box">
+          <h3>Alamat</h3>
+          <p>Jl. Ki Ageng Gribig No.28, Madyopuro, Kec. Kedungkandang, Kota Malang, Jawa Timur</p>
+        </div>
+        <div class="info-box">
+          <h3>Email</h3>
+          <p>info@smkn6malang.sch.id</p>
+        </div>
+        <div class="info-box">
+          <h3>Telepon</h3>
+          <p>(0341) 722216</p>
+        </div>
+      </div>
+
+      <div class="kontak-content">
+        <div class="form-kontak">
+          <h3>Kirim Pesan</h3>
+            <input type="text" name="nama" placeholder="Nama Anda" required />
+            <input type="email" name="email" placeholder="Email Anda" required />
+            <textarea name="pesan" rows="5" placeholder="Tulis Pesan Anda di sini..." required></textarea>
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h4>SMK Negeri 6 Malang</h4>
+      <p>Jl. Ki Ageng Gribig No.28, Madyopuro, Kec. Kedungkandang, Kota Malang, Jawa Timur</p>
+      <br>
+      <p>Email: smkn6malang@email.sch.id</p>
+    </div>
+    <div class="footer-right">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil Sekolah</a></li>
+        <li><a href="jurusan.html">Jurusan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 SMK Negeri 6 Malang. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
